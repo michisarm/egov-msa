@@ -14,14 +14,10 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
-//    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-hystrix:${springCloudVersion}'
-    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-hystrix:2.2.10.RELEASE'
-    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-hystrix-dashboard:2.2.10.RELEASE'
-    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-ribbon:2.2.10.RELEASE'
     implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-server:2.2.10.RELEASE'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
-test {
+tasks.named('test') {
     useJUnitPlatform()
 }

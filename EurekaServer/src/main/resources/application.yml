@@ -1,0 +1,14 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: EurekaServer
+  freemarker:
+    template-loader-path: classpath:/templates/
+    prefer-file-system-access: false
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
